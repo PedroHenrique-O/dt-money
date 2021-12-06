@@ -2,22 +2,26 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 4rem;
+  //width: 800px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+
   table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+
     border-spacing: 0 0.5rem;
 
     th {
       color: var(--text-body);
       font-weight: 400;
       padding: 1rem 2rem;
+      text-align: left;
       line-height: 1.5rem;
-      tr {
-        display: flex;
-        justify-content: left;
-      }
+      /* tr {
+        //display: flex;
+        // justify-content: center;
+      } */
     }
     td {
       padding: 1rem 2rem;
