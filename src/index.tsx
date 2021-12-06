@@ -15,7 +15,7 @@ createServer({
           title: "Freelance de website",
           type: "deposit",
           category: "dev",
-          amount: "6880",
+          amount: 2000,
           createdAt: new Date("2021-02-12 09:00:30"),
         },
         {
@@ -23,7 +23,7 @@ createServer({
           title: "Jantar",
           type: "withdraw",
           category: "Comida",
-          amount: "6880",
+          amount: 500,
           createdAt: new Date("2021-02-12 10:00:30"),
         },
         {
@@ -31,7 +31,7 @@ createServer({
           title: "Filme",
           type: "withdraw",
           category: "Laser",
-          amount: "6880",
+          amount: 100,
           createdAt: new Date("2021-02-12 04:00:30"),
         },
       ],
@@ -47,7 +47,7 @@ createServer({
 
     this.post("/transactions", (schema, request) => {
       let data = JSON.parse(request.requestBody);
-      return schema.create(data);
+      return schema.create("transaction", data);
     });
   },
 });

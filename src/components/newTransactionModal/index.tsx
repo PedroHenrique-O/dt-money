@@ -4,9 +4,7 @@ import closeImg from "../../assets/close.svg";
 import incomeImg from "../../assets/income.svg";
 import outcomeImg from "../../assets/outcome.svg";
 import { FormEvent, useState } from "react";
-
-import { useContext } from "react";
-import { TransactionContext } from "../../TransactionContext";
+import { useTransactions } from "../../hooks/useTransactions";
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -17,7 +15,7 @@ export function NewTransactionModal({
   isOpen,
   onRequestClose,
 }: NewTransactionModalProps) {
-  const { createTransaction } = useContext(TransactionContext);
+  const { createTransaction } = useTransactions();
 
   const [type, setType] = useState("deposit");
   const [title, setTitle] = useState("");
@@ -90,16 +88,17 @@ export function NewTransactionModal({
           <RadioBox
             isActive={type === "deposit"}
             isActiveColor="green"
-            type="submit"
+            // type="submit"
             onClick={handleDepositButton}
           >
             <img src={incomeImg} alt="Entrada" />
             Entrada
           </RadioBox>
+
           <RadioBox
             isActive={type === "withdraw"}
             isActiveColor="red"
-            type="submit"
+            //type="submit"
             onClick={handleWithDrawtButton}
           >
             <img src={outcomeImg} alt="Saída" />

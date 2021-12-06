@@ -13,15 +13,13 @@ export const Container = styled.div`
     border-spacing: 0 0.5rem;
 
     th {
+      background: var(--shape);
+      box-shadow: 0 2px 4px;
       color: var(--text-body);
-      font-weight: 400;
+      font-weight: 700;
       padding: 1rem 2rem;
       text-align: left;
       line-height: 1.5rem;
-      /* tr {
-        //display: flex;
-        // justify-content: center;
-      } */
     }
     td {
       padding: 1rem 2rem;
