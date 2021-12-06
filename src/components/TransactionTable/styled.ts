@@ -14,7 +14,8 @@ export const Container = styled.div`
 
     th {
       background: var(--shape);
-      box-shadow: 0 2px 4px;
+      border: 1px solid #cccccc;
+
       color: var(--text-body);
       font-weight: 700;
       padding: 1rem 2rem;
