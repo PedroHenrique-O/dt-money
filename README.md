@@ -18,4 +18,4 @@
 <h1> How to install </h1>
 
 <p> > Use o comando yarn ou npm install para instalar as dependências do projeto. </p>
-<p> > Inicie o json server com o comando yarn server e em seguida o projeto com yarn start. </p>
+<p> > Inicie o projeto com yarn start. </p>
