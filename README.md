@@ -11,7 +11,7 @@
 
 <br/>
 
-É possível inserir novas transações, e o DashBoar exibe informações de entrada, saída e total, logo abaixo todas as transações são listadas que ficam armazenadas no LocalStorage.
+É possível inserir novas transações que são armazenadas no LocalStorage, e o DashBoar exibe informações de entrada, saída e total, e por fim, todas as transações são listadas.
 
 </p>
 
